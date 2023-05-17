@@ -1,0 +1,16 @@
+.paginationContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.paginationListItem{
+    border-radius: 4;
+    padding: 4px;
+    border-width: 2px;
+    border-color: aqua;
+    margin-right: 4px;
+}
+
+.listItem{
+    font-size: medium;
+}

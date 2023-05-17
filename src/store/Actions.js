@@ -1,16 +1,17 @@
-import {GET_EMPLOYEE_DATA} from './actionTypes'
+import {actionTypes} from './actionTypes'
 
 export function getEmployeeData(employeeData) {
     return {
-        type: GET_EMPLOYEE_DATA,
+        type: actionTypes.getEmployeeData,
         payload: employeeData
     }
 }
 
-export function makeInitialApiRequest() {
+export function makeInitialApiRequest(pageNumber) {
     return async dispatch => {
         try {
-            const response = await fetch('https://reqres.in/api/users')
+            const url = `https://reqres.in/api/users?page=${pageNumber}&per_page=5`
+            const response = await fetch(url)
             const data = await response.json()
             dispatch(getEmployeeData(data))
         }

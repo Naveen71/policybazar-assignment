@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path= '/'  element ={<EmployeeListPage/>}/>
-          <Route exact path= '/about-employee' element={<AboutEmployeePage/>}/>
+          <Route path= '/about-employee' element={<AboutEmployeePage/>}/>
           <Route element = {<NotFound/>}/>
         </Routes>
       </BrowserRouter>
