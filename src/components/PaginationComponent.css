@@ -3,12 +3,22 @@
     flex-direction: row;
 }
 
-.paginationListItem{
-    border-radius: 4;
-    padding: 4px;
+.selectedPaginationListItem{
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-width: 2px;
-    border-color: aqua;
     margin-right: 4px;
+    background-color: green;
+}
+
+.paginationListItem{
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 2px;
+    margin-right: 4px;
+    background-color:bisque;
 }
 
 .listItem{

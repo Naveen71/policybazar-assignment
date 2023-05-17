@@ -9,8 +9,9 @@ export default function PaginationComponent(props){
     return ( 
         <div className='paginationContainer'>
             {pageNumbers.map((eachPage,index)=>{
+                const listItemClass = props.currentPage === index+1 ? 'selectedPaginationListItem' : 'paginationListItem';
                 return (
-                <div className='paginationListItem' onClick={()=>props.onPageChange(index+1)}>
+                <div className={listItemClass} onClick={()=>props.onPageChange(index+1)}>
                     <p className='listItem'>{eachPage}</p>
                 </div>)
             })}

@@ -14,11 +14,9 @@ function EmployeeListPage(props){
   },[currentPage]);
 
   const onPageChange = (pageNumber) => {
-    console.log(pageNumber);
     setCurrentPage(pageNumber);
   }
 
-  console.log(props.entireList);
     if(!props.entireList.data || !props.entireList.data || props.entireList.data.length === 0){
       return
     }

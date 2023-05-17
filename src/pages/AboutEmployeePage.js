@@ -17,7 +17,7 @@ function AboutEmployeePage(props){
             setData(props.entireList.data.filter(eachItem => eachItem.id === Number(id))[0])
         }
     },[props.entireList])
-    console.log(employeeDetails)
+
     if(employeeDetails){
         return (
             <div className='container'>
